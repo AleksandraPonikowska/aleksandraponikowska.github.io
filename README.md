@@ -4,3 +4,5 @@ TO DO:
 * make mobile ver
 * make about me more visually appealing??
 * make education section... better
+* add bomberman
+* hover animations
