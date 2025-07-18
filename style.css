@@ -51,6 +51,7 @@ nav {
 
 nav h2 {
   text-align: center;
+  text-decoration: none;
 }
 
 .pfp-img {
@@ -197,3 +198,4 @@ hr {
   border-radius: 20px;
   white-space: nowrap;
 }
+
