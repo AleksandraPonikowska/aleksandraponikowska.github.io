@@ -257,7 +257,6 @@ hr {
 @media only screen and (max-width: 750px) {
   
   nav {
-    background-color: aqua;
     position: relative;
     width: 100vw;
   }
