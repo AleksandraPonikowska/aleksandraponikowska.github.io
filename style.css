@@ -37,6 +37,10 @@ body {
 
 /* Nav bar */
 
+
+
+
+
 nav {
   position: fixed;
   width: 350px;
@@ -51,11 +55,11 @@ nav {
   justify-content: center;
 }
 
+
+
 nav h2 {
   text-align: center;
   text-decoration: none;
-
-
 }
 
 h2:hover{
@@ -93,6 +97,9 @@ nav ul li a {
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 5px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul li a:hover {
@@ -107,6 +114,7 @@ main {
   padding: 40px 80px;
   flex-grow: 1;
   text-align: justify;
+  line-height: 1.6;
 }
 
 h2, h3 {
@@ -117,7 +125,7 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   padding-bottom: 10px;
 }
 
@@ -144,6 +152,8 @@ hr {
 
 /* Projects */
 
+
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -152,8 +162,9 @@ hr {
 }
 
 .project-card {
+  box-shadow: 0 10px 10px 5px rgba(0,0,0,0.1);
   background-color: var(--text-light);
-  border: 2px solid var(--primary-color);
+  border: none;
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.2s ease;
@@ -279,3 +290,16 @@ hr {
 
 
 }
+
+
+body {
+  font-family: 'Comic Neue', sans-serif;
+  font-weight: 600;
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(180deg, #fff, #fdf1f5);
+  color: #333;
+}
+
+
+
