@@ -31,7 +31,7 @@ const projects = [
     category: "data",
     featured: true,
     link: "https://github.com/domgwarda/ml-project",
-    img: "phish.png"
+    img: "phish2.png"
   },
   /*
   {
