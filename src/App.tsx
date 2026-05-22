@@ -70,7 +70,7 @@ const projects = [
     category: "nie wiem",
     featured: true,
     link: "https://github.com/AleksandraPonikowska/pngtuber",
-    img: "piekielna.png"
+    img: "pngtuber.png"
   },
   {
     title: "Hellish resolution 3",
