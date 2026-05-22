@@ -64,6 +64,15 @@ const projects = [
   },
   */
   {
+    title: "PNGTuber software",
+    desc: "PNGTuber software written in C++ featuring real-time audio processing and mouse tracking.",
+    tags: ["C++", "SFML", "Signal Processing"],
+    category: "nie wiem",
+    featured: true,
+    link: "https://github.com/AleksandraPonikowska/pngtuber",
+    img: "piekielna.png"
+  },
+  {
     title: "Hellish resolution 3",
     desc: "A logic-driven 2D game inspired by the Resolution Principle in Mathematical Logic.",
     tags: ["Python", "Pygame", "Logic", "Teamwork"],
