@@ -27,22 +27,22 @@ const projects = [
   {
     title: "Phishing URL Detector",
     desc: "ML classifier (87% accuracy) beating human baseline (67%). Custom feature engineering & optimization.",
-    tags: ["ML", "Python", "Data Analysis"],
+    tags: ["ML", "Python", "Data Analysis", "Teamwork"],
     category: "data",
     featured: true,
     link: "https://github.com/domgwarda/ml-project",
     img: "phish2.png"
   },
-  /*
+  
   {
     title: "Database System (MIT-based)",
     desc: "Implemented storage, buffering, relational algebra, and ACID transactions based on MIT 6.5830.",
-    tags: ["Go", "Database Design", "ACID","Teamwork"],
-    category: "games",
+    tags: ["Go", "Database", "ACID","Teamwork"],
+    category: "data",
     featured: false,
-    link: "",
-    img: "https://img.itch.zone/aW1nLzIxMTA4MTA5LnBuZw==/315x250%23c/GWz117.png"
-  },*/
+    link: "https://dsg.csail.mit.edu/6.5830/",
+    img: "mit.png"
+  },
   {
     title: "Local multiplayer bomberman",
     desc: "Local multiplayer 2.5D bomberman with customizable maps.",
@@ -110,17 +110,17 @@ const projects = [
     img: "https://img.itch.zone/aW1nLzIxMTA4MTA5LnBuZw==/315x250%23c/GWz117.png"
   },
   */
- /*
+ 
   {
     title: "Chrome site blocker ",
-    desc: "Implemented storage, buffering, relational algebra, and ACID transactions based on MIT 6.5830.",
-    tags: ["Java", "Database Design", "ACID"],
-    category: "games",
-    featured: false,
-    link: "https://github.com/twoj-profil/projekt",
-    img: "https://img.itch.zone/aW1nLzIxMTA4MTA5LnBuZw==/315x250%23c/GWz117.png"
+    desc: "A browser extension that helps with productivity by blocking sites based on schedule",
+    tags: ["React", "Vite", "dnd-kit", "JavaScript"],
+    category: "web",
+    featured: true,
+    link: "https://github.com/AleksandraPonikowska/site-blocker",
+    img: "site_blocker.png"
   },
-  */
+  
  /*
   {
     title: "Glorpification",
@@ -212,15 +212,21 @@ Computer Science student at UWr        </p>
         <div className="flex justify-between items-end mb-12">
         <h2 className="text-4xl font-extrabold text-red-800">projects</h2>
         <div className="flex gap-3">
-              {['data', 'games', 'all'].map((f) => (
+              {[
+                { id: 'featured', label: '★ featured' },
+                { id: 'data', label: 'data' },
+                { id: 'games', label: 'games' },
+                { id: 'web', label: 'web' },
+                { id: 'all', label: 'all' }
+              ].map((f) => (
                 <button
-                  key={f}
-                  onClick={() => handleFilterChange(f)}
-                  className={`px-4 py-1 rounded-xl border-2  font-bold text-sm transition-all active:shadow-none ${
-                    activeFilter === f ? 'bg-red-800 text-white border-red-800' : 'bg-white text-black border-stone-300'
+                  key={f.id}
+                  onClick={() => handleFilterChange(f.id)}
+                  className={`px-4 py-1 rounded-xl border-2 font-bold text-sm transition-all active:shadow-none ${
+                    activeFilter === f.id ? 'bg-red-800 text-white border-red-800' : 'bg-white text-black border-stone-300'
                   }`}
                 >
-                  {f === 'featured' ? '★ featured' : `${f}`}
+                  {f.label}
                 </button>
               ))}
             </div></div>
@@ -243,7 +249,7 @@ Computer Science student at UWr        </p>
               <p className="text-gray-500 text-sm mb-4 leading-relaxed">
                 {project.desc}
               </p>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {project.tags.map(tag => (
                   <span key={tag} className="px-3 py-1 bg-gray-400 text-white rounded-full text-xs font-bold">
                     {tag}
