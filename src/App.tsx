@@ -33,6 +33,15 @@ const projects = [
     link: "https://github.com/domgwarda/ml-project",
     img: "phish2.png"
   },
+  {
+    title: "Themis analytics",
+    desc: "An automated data scraper and Power BI dashboard I built to track my students' performance.",
+    tags: ["Python", "Power BI", "Data Analysis", "DAX"],
+    category: "data",
+    featured: true,
+    link: "https://github.com/AleksandraPonikowska/themis-analytics",
+    img: "powerbi.png"
+  },
   
   {
     title: "Database System (MIT-based)",
